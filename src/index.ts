@@ -10,7 +10,7 @@ const app = express();
 app.use('/assets', express.static(path.join(__dirname, '..', 'public')));
 
 app.get('/', (req, res) => {
-  res.send('Api works!');
+  res.redirect('/home');
 });
 
 app.get('/home', (req, res) => {
